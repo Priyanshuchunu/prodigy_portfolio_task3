@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #190048, #065ba7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.task-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-bottom: 3px solid #00aaff;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: #2264d1;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.content {
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  position: relative;
+}
+
+.content::before {
+  content: "❝";
+  font-size: 3rem;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  color: #ffc107;
+}
+
+.game-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #ffffff22;
+  border: 2px solid #ffffff88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: #ffffff44;
+}
+
+.status {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.restart-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #00bcd4;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.restart-btn:hover {
+  background: #0097a7;
+}
+
+.footer {
+  margin-top: 60px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
